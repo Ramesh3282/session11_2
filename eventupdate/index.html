@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outerbox">
+        <div class="outerboxtext">
+            <h1>Event 1</h1>
+            <p>Number of Available seats: 23</p>
+
+        </div>
+        
+        <div class="innerbox">
+            <div class="image">
+               <img src="pic.jpg"> 
+            </div>  
+            <div class="form">
+              <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Name:</label><br> 
+                    </div>
+                    <div class="col-75">
+                        <input type="text">    
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Email:</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="email">  
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Phone:</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Number of seats: </label>
+                    </div>
+                    <div class="col-75">
+                        <select id="seat" onchange="attendeeChange()">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Name of attendee:<span class="attendee"></span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text"> 
+                    </div>
+                </div>
+             
+                <div class="row">
+                    <div class="col-button" >
+                        <input type="submit" value="submit" class="buttons">
+                    
+                        <input type="reset" value="cancel" class="buttons">
+                    </div>
+                </div>
+                
+
+               
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
